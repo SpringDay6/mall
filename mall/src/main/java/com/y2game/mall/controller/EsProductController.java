@@ -38,6 +38,7 @@ public class EsProductController {
     @ResponseBody
     public CommonResult<Object> delete(@PathVariable Long id) {
         esProductService.delete(id);
+        System.out.println("test merge");
         return CommonResult.success(null);
     }
 

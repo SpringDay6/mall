@@ -29,6 +29,7 @@ public class EsProductController {
     @ResponseBody
     public CommonResult<Integer>        importAllList() {
         int count = esProductService.importAll();
+        System.out.println("测试git 分支");
         return CommonResult.success(count);
     }
 

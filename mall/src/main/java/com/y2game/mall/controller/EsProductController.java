@@ -38,6 +38,7 @@ public class EsProductController {
     @ResponseBody
     public CommonResult<Object> delete(@PathVariable Long id) {
         esProductService.delete(id);
+        System.out.println("测试git merge");
         return CommonResult.success(null);
     }
 
